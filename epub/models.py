@@ -1,5 +1,6 @@
 from django import template
 from django.template.loader import get_template
+from django.template.defaultfilters import slugify
 
 common_second_words = ('al', 'da', 'de', 'del', 'dela', 'della', 'di', 'du', 'el', 'la', 'le', 'mc', 'o\'', 'san', 'st', 'sta', 'van', 'vande', 'vanden', 'vander', 'von',)
 common_third_words = ('van', 'de', )
