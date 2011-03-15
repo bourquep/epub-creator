@@ -389,6 +389,7 @@ class EPub(object):
     
     def generate_epub(self, filepath):
         import zipfile, os
+        epub = None
         try:
             epub = zipfile.ZipFile(filepath, 'w', zipfile.ZIP_DEFLATED)
             tmpl_dir = os.path.join(os.path.dirname(__file__),'templates','epub')
